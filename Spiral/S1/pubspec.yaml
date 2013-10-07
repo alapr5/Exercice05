@@ -1,0 +1,5 @@
+name: Draw
+version: 0.0.1
+author: Alexandre April
+dependencies:
+  browser: any

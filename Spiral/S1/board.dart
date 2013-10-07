@@ -8,9 +8,9 @@ class Board {
   }
 
   //draw a triangle
-  void triangleup(x, y, h, fill) {
+  void triangle(x, y, h) {
     context.beginPath();
-    context.fillStyle = fill;
+    context.fillStyle = 'black';
     context.moveTo(x, y); // Sommet
     context.lineTo(x + h/2, y+h); // droit
     context.lineTo(x - h/2, y+h); // base
@@ -19,18 +19,7 @@ class Board {
     context.fill();
   }
   
-  void triangledown(x1,y1,x2,y2,x3,y3, fill) {
-    context.beginPath();
-    context.fillStyle = fill;
-    context.moveTo(x1, y1);
-    context.lineTo(x2, y2);
-    context.lineTo(x3, y3);
-    context.lineTo(x1, y1);
-    context.closePath();
-    context.fill();
-  }
-  
-  void triangleRec(x, y, h, i, white){
+  void triangleRec(x, y, h, i){
     triangle(x, y, h);
     if (i < 10){
       var x1 = x - h/2;
