@@ -1,0 +1,10 @@
+ex05
+
+0/1
+
+.gitignore ?
+
+plusieurs avertissements (warnings)
+
+library ping_pong; ?
+
